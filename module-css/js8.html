@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>HTML, CSS and Javascript all together</title>
+
+  <link rel="stylesheet" type="text/css" href="css2.css">
+
+  <script>
+
+  function doMath() //
+  {
+    var x = 2;
+    var y = 10;
+    var z = 4;
+    var answer = x * y / z;
+
+    document.getElementById("output").innerHTML = "The result is "+ answer;
+  }
+  </script>
+
+<style type="text/css">
+  p.regular {color:blue;font-size:200%;}
+  p.medium {color:green;font-size:150%;}
+</style>
+</head>
+
+<body>
+<h1>HTML, CSS and Javascript all together</h1>
+
+<button onclick="doMath();">Do the Math </button>
+
+<img id="google" src="img/google.png" />
+<p id="text">Some practicing text paragraph for javascript exercise. Some practicing text paragraph for javascript exercise.
+Some practicing text paragraph for javascript exercise. Some practicing text paragraph for javascript exercise.</p>
+
+<p id="output" style="color:green;font-size:200%;"></p>
+
+<p class="regular"> This is a test of regular.</p>
+<p class="testClass"> This is a test of testClass.</p>
+
+<table>
+  <tr>
+    <td>Day 1</td><td>Walking</td><td>30 minutes</td>
+  </tr>
+    <td>Day 2</td><td>Swimming</td><td>45 minutes</td>
+  <tr>
+    <td>Day 3</td><td>Resting</td><td>500 minutes</td>
+  </tr>
+  <tr>
+    <td>Day 4</td><td>Resting</td><td>500 minutes</td>
+  </tr>
+  <tr>
+    <td>Day 5</td><td>Resting</td><td>500 minutes</td>
+  </tr>
+  <tr>
+    <td>Day 6</td><td>Resting</td><td>500 minutes</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

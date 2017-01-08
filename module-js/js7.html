@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Onblur Page version 2</title>
+
+  <script type="text/javascript">
+
+  function checkField1() // Function will check the content of the input field
+  {
+    var field = document.getElementById("field1").value;
+
+    if (field.length < 5){
+      document.getElementById("message1").innerHTML = "Too short";
+    }else{
+      document.getElementById("message1").innerHTML = "That's long enought!";
+    }
+  }
+
+  function checkField2() // Function will check the content of the input field
+  {
+    var field = document.getElementById("field2").value;
+
+    if (field != ""){
+      document.getElementById("message2").innerHTML = "Input accepted";
+    }else{
+      document.getElementById("message2").innerHTML = "You must provide input for this field.";
+    }
+  }
+  </script>
+
+</head>
+
+<body>
+<h1>Javascript onblur event tests. version 2</h1>
+
+<input id= "field1" type="text" onblur="checkField1();"/><span id="message1"></span>
+<input id= "field2" type="text" onblur="checkField2();"/><span id="message2"></span>
+<input id= "field3" type="text"/><span id="message3"></span>
+</body>
+
+</html>
